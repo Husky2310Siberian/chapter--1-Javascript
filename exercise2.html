@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Πληρωμής</title>
+</head>
+<body>
+    <form>
+        <div>
+            <h1>Φόρμα Πληρωμής</h1>
+        </div>
+        <div>
+            Τα υποχρεωτικά πεδία ακολουθούνται απο *
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            <h2>Προσωπικά Στοιχεία</h2>
+        </div>
+        <fieldset style="width: 15;">
+            <legend>Title</legend>
+            <div>
+                <input type="radio" name="gender" id="male" value="Mr." checked>
+                <label for="gender"> Mr. </label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="Mrs.">
+                <label for="gender"> Mrs. </label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="Dr." value="Dr.">
+                <label for="gender">Dr.</label>
+            </div>
+        </fieldset>
+            <div>
+                <label for="Name">Name: <abbr title="υποχρεωτικό πεδίο">*</abbr></label> 
+                <input type="Name" name="Name" id="Name" required>
+            </div>
+            <div>
+                <label for="Email"> Email: <abbr title="υποχρεωτικό πεδίο">*</abbr></label>
+                <input type="Email" name="Email" id="Email" required>
+           </div>
+           <div>
+                <labe for="Password"> Password:<abbr title="υποχρεωτικό πεδίο">*</abbr></labe>
+                <input type="Password" name="Password" id="Password" required>
+           </div>
+           <div>
+                <h2>Πληροφορίες Πληρωμής</h2>
+           </div>
+            <div>
+                <label for="method"> Card Type <abbr title="υποχρεωτικό πεδίο">*</abbr></label>
+                <select name="method" id=" method">
+                <option value="1">VISA</option>
+                <option value="2">Mastercard</option>
+                
+                </select>
+            </div>
+            <div>
+                <label for="Card Number">Card Number <abbr title="υποχρεωτικό πεδίο">*</abbr></label>
+                <input type="numbers" name="Card numbers" id="Card Numbers" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+           </div>
+           <div>
+                <label for="Expiration Date"> Expiration Date <abbr title="υποχρεωτικό πεδίο">*</abbr></label>
+                <input type="numbers" name="Expiration Date" id="Expiration Date" placeholder="MM/YYYYY" required>
+           </div>
+           <div>
+                <input type="submit" value="Προχωρήστε στην πληρωμή">
+           </div>
+    </form>
+</body>
+</html>
